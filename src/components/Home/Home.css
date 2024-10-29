@@ -1,0 +1,21 @@
+.name-span {
+    position: relative;
+    padding-right: 10px; /* Optional: creates spacing for the border */
+  }
+  
+  .name-span::after {
+    content: "";                  /* Creates an empty content block */
+    position: absolute;
+    top: 0;
+    right: 0;                     /* Positions it to the right of the text */
+    width: 2px;                   /* Border width */
+    height: 100%;                 /* Matches the height of the text */
+    background-color: currentColor; /* Matches the text color */
+    animation: blink 1s step-end infinite; /* Optional: blinking effect */
+  }
+  
+  /* Optional blinking animation */
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+  
