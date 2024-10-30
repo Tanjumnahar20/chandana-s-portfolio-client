@@ -23,7 +23,6 @@ const Projects = () => {
         fetch('http://localhost:5000/projects')
         .then(res=>res.json())
         .then(data=>{
-            console.log("data=", data);
             setProjects(data)
         })
     },[])
