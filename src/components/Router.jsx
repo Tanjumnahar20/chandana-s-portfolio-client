@@ -7,6 +7,7 @@ import Home from "./Home/Home";
 import Projects from "./Projects/Projects";
 import Skills from "./Skills/Skills";
 import ProjectDetails from "./Projects/ProjectDetails";
+import Contact from "./Contacts/Contact";
   
   const Router = createBrowserRouter([
     {
@@ -29,13 +30,17 @@ import ProjectDetails from "./Projects/ProjectDetails";
                 throw new Error("Failed to fetch project data");
             }
             const data = await response.json();
-            return { project: data };
-        },
+            return { project: data }
+          },
           element:<ProjectDetails></ProjectDetails>
         },
         {
           path:'/skills',
           element:<Skills></Skills>
+        },
+        {
+          path:'/contacts',
+          element:<Contact></Contact>
         },
       ]
     },
