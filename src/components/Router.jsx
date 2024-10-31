@@ -8,6 +8,10 @@ import Projects from "./Projects/Projects";
 import Skills from "./Skills/Skills";
 import ProjectDetails from "./Projects/ProjectDetails";
 import Contact from "./Contacts/Contact";
+import About from "./About/About";
+import CreateBlog from "./Blogs/CreateBlogs";
+import BlogList from "./Blogs/BlogList";
+import BlogDetails from "./Blogs/BlogDetails";
   
   const Router = createBrowserRouter([
     {
@@ -41,6 +45,22 @@ import Contact from "./Contacts/Contact";
         {
           path:'/contacts',
           element:<Contact></Contact>
+        },
+        {
+          path:'/about',
+          element:<About></About>
+        },
+        {
+          path:'/blogs',
+          element:<BlogList></BlogList>
+        },
+        {
+          path:'/blogs/:id',
+          element:<BlogDetails></BlogDetails>
+        },
+        {
+          path:'/admin/dashboard/create-blogs',
+          element:<CreateBlog></CreateBlog>
         },
       ]
     },

@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Contact = () => {
     const [name, setName] = useState('');
@@ -123,6 +125,7 @@ const Contact = () => {
                             onChange={(e) => setEmail(e.target.value)} 
                             placeholder="Your Email"
                             className="input input-bordered bg-white"
+                            required
                         />
                     </div>
 
