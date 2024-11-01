@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
           <div className='flex flex-col footer-span'>
             <span className="footer-title mx-auto">Subscribe</span>
-            <div className="form-control w-80">
+            <div className="form-control lg:w-80">
               <label className="label mx-auto">
                 <span className="label-text text-orange-400">Enter your email address</span>
               </label>

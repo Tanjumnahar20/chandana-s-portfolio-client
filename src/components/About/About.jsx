@@ -1,11 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
+import me from '../../assets/images/me.jpg'
 
 const About = () => {
     return (
-        <div id='about' className='w-4/5 mx-auto'>
-        <h1 className='title text-3xl text-center text-gray-300 my-10'>About</h1>
+        <div id='about' className='lg:w-4/5 md:w-[90%] mx-auto'>
+        {/* <h1 className='title text-3xl text-center text-gray-300 my-10'>About</h1> */}
         <div className="card rounded-none lg:card-side bg-black shadow-xl">
-            <figure className='w-2/6 mr-12 about-image'><img height={400} width={400} src='' alt="Album" /></figure>
+            <figure className='lg:w-2/6 md:w-full sm:w-full lg:mr-12 about-image'><img src={me} height={400} width={400} className='rounded-2xl md:w-full sm:w-full' alt="Album" /></figure>
             <div className="about-me card-body p-10">
                 <h2 className="card-title text-gray-300 text-3xl py-5">About Me</h2>
                 <hr/>

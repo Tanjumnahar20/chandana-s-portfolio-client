@@ -39,7 +39,7 @@ const Contact = () => {
         }
       };
     return (
-        <div id='contact' className='w-[80%] mx-auto mt-8'>
+        <div id='contact' className='lg:w-[80%] md:w-[90%] mx-auto mt-8'>
         <h2 className="title text-gray-300 text-3xl text-center mb-8">My Contact</h2>
 
         <div className='flex flex-col lg:flex-row justify-center items-center gap-5'>

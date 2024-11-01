@@ -5,6 +5,8 @@ import CV from '../../file/TANJUM_NAHAR_RESUME.docx (3).pdf'
 import Skills from "../Skills/Skills";
 import Projects from "../Projects/Projects";
 import BlogList from "../Blogs/BlogList";
+import About from "../About/About";
+import Contact from "../Contacts/Contact";
 
 const Home = () => {
     return (
@@ -69,6 +71,8 @@ const Home = () => {
             <Skills></Skills>
             <Projects></Projects>
             <BlogList />
+            <About />
+            <Contact />
         </>
 
     );

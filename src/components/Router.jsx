@@ -12,6 +12,7 @@ import About from "./About/About";
 import CreateBlog from "./Blogs/CreateBlogs";
 import BlogList from "./Blogs/BlogList";
 import BlogDetails from "./Blogs/BlogDetails";
+import CreateProject from "./Projects/CreateProject";
   
   const Router = createBrowserRouter([
     {
@@ -37,6 +38,10 @@ import BlogDetails from "./Blogs/BlogDetails";
             return { project: data }
           },
           element:<ProjectDetails></ProjectDetails>
+        },
+        {
+          path:'/admin/dashboard/create-project',
+          element:<CreateProject></CreateProject>
         },
         {
           path:'/skills',
