@@ -12,7 +12,7 @@ const Contact = () => {
     const handleSubmit = async () => {
 
         try {
-          const response = await axios.post('http://localhost:5000/contacts', {
+          const response = await axios.post('https://tanjum-portfolio.vercel.app/contacts', {
             name,
             email,
             message,

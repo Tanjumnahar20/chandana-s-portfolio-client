@@ -21,7 +21,7 @@
 //   const handleSubmit = async (e) => {
 //     e.preventDefault();
 //     try {
-//       const response = await axios.post('http://localhost:5000/projects', formData);
+//       const response = await axios.post('https://tanjum-portfolio.vercel.app/projects', formData);
 //       console.log('Project created successfully:', response.data);
 //       setFormData({
 //         name: '',
@@ -194,7 +194,7 @@ const ProjectForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/projects', formData);
+      const response = await axios.post('https://tanjum-portfolio.vercel.app/projects', formData);
       console.log('Project created successfully:', response.data);
       // Reset form fields
       setFormData({

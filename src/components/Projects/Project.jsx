@@ -14,7 +14,7 @@ const Project = ({ project }) => {
   }
     return (
       <div
-        className="bg-accent text-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 transform hover:scale-105 relative h-[550px]"
+        className="bg-accent text-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 transform hover:scale-105 relative h-[500px]"
       >
         <a href='' target="_blank" rel="noreferrer">
           <figure className="relative">
@@ -45,9 +45,6 @@ const Project = ({ project }) => {
             >
               Live Site
             </a>
-            {/* <Link to={`/projects/${project._id}`} className="btn btn-sm btn-secondary">
-              Details
-            </Link> */}
             <button onClick={handleDetails} className="btn btn-sm btn-secondary">
               Details
             </button>

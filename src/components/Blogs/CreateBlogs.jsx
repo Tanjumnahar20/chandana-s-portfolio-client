@@ -24,7 +24,7 @@ const CreateBlog = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/blogs', formData);
+      const response = await axios.post('https://tanjum-portfolio.vercel.app/blogs', formData);
       console.log('Blog created successfully:', response.data);
       alert('Blog created successfully!');
       setFormData({

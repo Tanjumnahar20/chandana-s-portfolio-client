@@ -30,7 +30,7 @@ import CreateProject from "./Projects/CreateProject";
         {
           path:'/projects/:id',
           loader:async ({ params }) => {
-            const response = await fetch(`http://localhost:5000/projects/${params.id}`);
+            const response = await fetch(`https://tanjum-portfolio.vercel.app/projects/${params.id}`);
             if (!response.ok) {
                 throw new Error("Failed to fetch project data");
             }

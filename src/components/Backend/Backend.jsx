@@ -6,7 +6,7 @@ const Backend = () => {
     const [backendSkills, setBackendSkills] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/backendskills')
+        axios.get('https://tanjum-portfolio.vercel.app/backendskills')
             .then(response => {
                 setBackendSkills(response.data);
             })

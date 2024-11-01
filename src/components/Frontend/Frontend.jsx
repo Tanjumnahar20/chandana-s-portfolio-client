@@ -6,7 +6,7 @@ const Frontend = () => {
     const [frontendSkills, setFrontendSkills] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/skills')
+        axios.get('https://tanjum-portfolio.vercel.app/skills')
             .then(response => {
                 setFrontendSkills(response.data);
                 console.log("frontskill",response.data);

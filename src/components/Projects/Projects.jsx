@@ -8,19 +8,8 @@ import 'slick-carousel/slick/slick-theme.css';
 const Projects = () => {
     const [projects, setProjects] = useState([]);
 
-    // useEffect(() => {
-    //     axios.get('http://localhost:5000/projects')
-    //         .then(response => {
-    //             console.log("data =", response.data.data);
-    //             setProjects(response.data.data);
-    //         })
-    //         .catch(error => {
-    //             console.error('There was a problem with fetching projects:', error);
-    //         });
-    // }, []);
-
     useEffect(()=>{
-        fetch('http://localhost:5000/projects')
+        fetch('https://tanjum-portfolio.vercel.app/projects')
         .then(res=>res.json())
         .then(data=>{
             setProjects(data)
